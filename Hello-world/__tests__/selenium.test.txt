@@ -48,7 +48,7 @@ describe('Selenium load check',() => {
   })
 
   it('Links show correctly - About', () => {
-    driver.findElement(By.id("centerblock"))
+    driver.findElement(By.id("login"))
     return console.log("found this one!")
   })
 })
