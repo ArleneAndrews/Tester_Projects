@@ -7,7 +7,7 @@ class TestFindItem():
 
     @pytest.fixture
     def driver(self, request):
-        driver_ = webdriver.Firefox()
+        driver_ = webdriver.Chrome()
 
         def quit():
             driver_.quit()
