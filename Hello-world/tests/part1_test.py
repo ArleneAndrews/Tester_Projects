@@ -21,6 +21,8 @@ class TestFindItem():
 
     def test_enter_type(self, driver):
         driver.get("https://www.iceyarns.com/")
-        driver.find_element(By.ID, "sinput2").send_keys("eyelash")
-        driver.find_element(By.ID, "sinput2").send_keys(Keys.RETURN)
+        driver.find_element(By.ID, "sinput2").send_keys("eyelash" + Keys.RETURN)
         time.sleep(2) # Let the user actually see something!
+        driver.findElement(By.tagName("tag-discount"));
+#value = Add To Cart
+        driver.close()
