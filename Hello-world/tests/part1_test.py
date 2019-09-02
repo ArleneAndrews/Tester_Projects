@@ -2,10 +2,8 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# create a new Firefox session
-driver = webdriver.Firefox(executable_path='E:\Documents and Settings\mom\geckodriver-v0.24.0-win64')
-driver.implicitly_wait(30)
-driver.maximize_window()
+# create a new Chrome session
+driver = webdriver.Chrome()
 
 class TestFindItem():
 
