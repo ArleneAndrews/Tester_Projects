@@ -1,4 +1,4 @@
-import pytest
+import pytest, time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -21,4 +21,5 @@ class TestFindItem():
     def test_enter_type(self, driver):
         driver.get("https://www.iceyarns.com/")
         driver.find_element(By.ID, "sinput2").send_keys("eyelash")
-        driver.find_element(By.ID, "submit").click()
+        driver.find_element(By.ID, "sinput2").send_keys(keys.RETURN)
+        time.sleep(2) # Let the user actually see something!
