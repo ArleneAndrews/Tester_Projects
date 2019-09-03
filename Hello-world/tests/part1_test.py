@@ -22,8 +22,7 @@ class TestFindItem():
     def test_enter_type(self, driver):
         driver.get("https://www.iceyarns.com/")
         driver.find_element(By.ID, "sinput2").send_keys("eyelash yarns" + Keys.RETURN)
-        #driver.findElement(By.tagName("tag-discount"))
         driver.find_element_by_class_name ("tag-discount").click()
-        #value = Add To Cart
+        form_element = driver.find_element_by_xpath("//form[@class='productcart']/input[1]").click()
         time.sleep(2) # Let the user actually see something!
         driver.close()
