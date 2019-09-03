@@ -23,7 +23,7 @@ class TestFindItem():
         driver.get("https://www.iceyarns.com/")
         driver.find_element(By.ID, "sinput2").send_keys("eyelash yarns" + Keys.RETURN)
         #driver.findElement(By.tagName("tag-discount"))
-        driver.find_element(By.CLASS, "tag-discount").click()
+        driver.find_element_by_class_name ("tag-discount").click()
         #value = Add To Cart
         time.sleep(2) # Let the user actually see something!
         driver.close()
