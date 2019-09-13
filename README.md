@@ -11,3 +11,10 @@ Challenge description:
 - Find a tag that will limit number of items
 - Place those items in the shopping cart
 
+##Let Me In section
+Challenge description
+
+- visit simple log-in site (maybe The Internet?)
+- enter username
+- enter password
+- click on button

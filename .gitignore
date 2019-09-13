@@ -1,2 +1,4 @@
 hello-world/venv/*
-Hello-world/tests/__pycache__/*
+Hello-world/tests/__pycache__/*.cpython*
+
+
