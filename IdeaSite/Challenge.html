@@ -128,7 +128,7 @@
     </div>
 
     <div class="two-third" role="main">
-        <div class="one-third">
+        <div class="third">
             <h1>Challenge</h1>
             <hr />
             <div>
@@ -141,7 +141,22 @@
             </div>
         </div>
         <div class="two-third">
-            <span style="float:right">Box for code/text goes here</span>
+            <label>
+                <input type='radio' checked name="final">
+                <span class="checkable">Incomplete</span>
+              </label><br><br>
+              
+              <input id="radiodemo" type='radio' name="final">
+              <label for="radiodemo" class="checkable">Final answer (can be changed for X hours)</label>
+              
+              <label>
+                  <input type="checkbox">
+                  <span class="checkable">Assistance request</span>
+                </label>
+                
+                <button class="dangerous">Submit</button>
+          </form>
+          <span style="float:right">Box for code/text goes here</span>
         </div>
         <hr />
         <h2>Resources</h2>
