@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Challenges</title>
+  <link rel="stylesheet" href="https://unpkg.com/picnic">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Contact page for freelance testing for your software, available on contract or for permanent employment.">
+  <!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,main,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+<![endif]-->
+</head>
+<style>
+  body {
+    font-family: "Times New Roman";
+    background-color: slategray;
+    font-size: large;
+    margin: 0;
+  }
+
+  .menu {
+    font-family: "Times New Roman";
+    font-size: large;
+  }
+
+  #img-bio {
+    float: left;
+    margin-left: 2vw;
+    width: 20vw;
+  }
+
+  #img-thumb {
+    float: right;
+    margin-left: 2vw;
+    width: 10vw;
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+
+  /**
+  * 1. Correct `inline-block` display not defined in IE 8/9.
+  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+  */
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+  }
+
+  a:link {
+    color: red;
+  }
+
+
+  /* visited link */
+
+  a:visited {
+    color: green;
+  }
+
+
+  /* mouse over link */
+
+  a:hover {
+    color: ivory;
+  }
+
+
+  /* selected link */
+
+  a:active {
+    color: aquamarine;
+  }
+</style>
+
+
+<body>
+
+<div style="overflow: hidden;height: 8vh;">
+    <nav class="demo">
+        <!-- responsive-->
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">Menu</label>
+
+        <div class="menu">
+        <a href="Profile.html">Profile</a>
+        <a href="challenge.html">Challenges</a>
+        <a href="resource.html">Resources List</a>
+        <a href="">About Us</a>
+        <a href="">Log Out</a>
+
+        
+        </div>
+    </nav>
+</div>
+    
+<div class="flex two">
+    <div class="fourth" role="banner">
+        <img id="img-bio" src="https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg" role="img" alt="IdeaSite logo">
+        <p>
+        <span style="float:left">Logo by <a href="https://www.pexels.com/@pixabay" role="link">Pixabay</a></span>
+    </div>
+
+    <div class="two-third" role="main">
+
+      <h1>Public Profile</h1>
+      <hr />
+      <div>
+        <h2>User Name:</h2>
+        <img id="img-thumb" src="https://cdn.pixabay.com/photo/2016/10/10/01/58/donut-1727498_960_720.png">
+        <h3>YourUserName</h3>
+        Also space for awards and "stars" (community-given recognition)
+        <hr />
+        <h2>Challenges Completed:</h2>
+        List challenges completed here, with links
+        <h2>My team:</h2>
+        Space for friends/co-workers 
+        <h2>Community</h2>
+        <h3>Requests</h3>
+        For where you've asked for help (Most recent on top)
+        <h3>Answers</h3>
+        For where you've answered (most active on top)
+        <h3>My community</h3>
+        Optional - if they've taken on a role, or gotten a "star" and date, maybe ratings?
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
