@@ -19,7 +19,7 @@ class TestFindItem():
         return driver_
 
 
-    def test_enter_type(self, driver):
+    def test_find_one(self, driver):
         driver.get("https://www.iceyarns.com/")
         driver.find_element(By.ID, "sinput2").send_keys("eyelash yarns" + Keys.RETURN)
         driver.find_element_by_class_name ("tag-discount").click()

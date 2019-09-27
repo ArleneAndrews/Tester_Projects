@@ -18,15 +18,16 @@ class TestFindItem():
         request.addfinalizer(quit)
         return driver_
 
+    #def emptycart()
+    #boxshopcart-btn 
 
-    def test_enter_type(self, driver):
-        driver.get("https://www.iceyarns.com/")
-        driver.find_element(By.ID, "sinput2").send_keys("eyelash yarns" + Keys.RETURN)
-        driver.find_element_by_class_name ("tag-discount").click()
-        form_element = driver.find_element_by_xpath("//form[@class='productcart']/input[1]").click()
-        time.sleep(2) # Let the user actually see something!
-        driver.close()
+    #def noitems
+
+    #def 
 
     def test_find_many(self, driver)
-        driver.get("https://www.scientificsonline.com/shop/geek-shop")
-        driver.find_element_by_class_name(".badge-Promotional")
+        driver.get("https://www.iceyarns.com/")
+        driver.find_element_by_class_name ("tag-discount").click()
+        #form_element = driver.find_element_by_xpath("//form[@class='productcart']/input[1]").click()
+        time.sleep(2) # Let the user actually see something!
+        driver.close()

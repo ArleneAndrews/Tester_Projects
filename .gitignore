@@ -2,3 +2,4 @@ hello-world/venv/*
 Hello-world/tests/__pycache__/*.cpython*
 
 
+Hello-world/tests/ideas.txt
