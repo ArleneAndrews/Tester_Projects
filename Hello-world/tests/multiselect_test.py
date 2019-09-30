@@ -12,16 +12,18 @@ class TestFindItem():
     def driver(self, request):
         driver_ = driver
 
-        def quit():
-            driver_.quit()
+    def quit():
+        driver_.quit()
 
-        request.addfinalizer(quit)
-        return driver_
+    request.addfinalizer(quit)
+    return driver_
 
-    #def emptycart()
-    #boxshopcart-btn 
-
-    #def noitems
+    def emptycart():
+        driver.find_element_by_class_name ("boxshopcart").click()
+        driver.find_element_by_class_name ("del").click()
+        
+     
+    #def noitems()
 
     #def 
 
