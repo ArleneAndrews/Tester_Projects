@@ -23,19 +23,14 @@ class TestFindItem():
         driver.find_element_by_class_name ("boxshopcart").click()
         driver.find_element_by_link_text ("Empty Cart").click()
 
-    def noitems():
-        
-        for item in 
-        driver.find_element_by_class_name ("tag-discount")
-	     
     def test_find_many(self, driver)
-        emptycart()
         driver.get("https://www.iceyarns.com/")
-        Count= 19 # There are 19 items on the opening page + "Show More"
-        noitems(Count)
-        driver.find_element_by_class_name ("tag-discount").click()
-
-        #form_element = driver.find_element_by_xpath("//form[@class='productcart']/input[1]").click()
+        emptycart() #Just in case the test failed before, this will ensure an empty cart
+        # There are 19 items on the opening page + "Show More")
+        for item in range(19):
+            driver.find_elements_by_class_name ("tag-discount").click()
+            form_element = driver.find_element_by_xpath("//form[@class='productcart']/input[range]").click()    
+        
         time.sleep(2) # Let the user actually see something!
         emptycart()
-        driver.close()
+        quit()
